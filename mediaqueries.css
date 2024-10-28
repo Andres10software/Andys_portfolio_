@@ -124,8 +124,8 @@
 /*for moblie screen*/ 
 @media only screen and (max-width: 600px) {
   .section__pic-container {
-    width: 85px;
-    height: 85px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto 2rem;
 }
 }
