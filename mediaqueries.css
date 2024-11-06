@@ -1,65 +1,17 @@
-/* Media query for screens between 1200px and 1280px */
-@media screen and (max-width: 1280px) {
-  #profile {
-    flex-direction: column;  /* Stack the profile picture and text vertically */
-  }
+* Base styles */
 
-  .section__pic-container {
-    width: 200px;   /* Set the profile image width to 200px */
-    height: 200px;  /* Set the profile image height to 200px */
-  }
-
-  .section__text {
-    text-align: center;  /* Ensure text stays centered */
-  }
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+  /* CSS for smaller screens */
 }
 
-/* Media query for screens below 1200px (for smaller screens like tablets or phones) */
-@media screen and (max-width: 1200px) {
-  #profile {
-    flex-direction: column;  /* Stack profile image and text vertically */
-    gap: 2rem;               /* Add spacing between the elements */
-  }
-
-  .section__pic-container {
-    width: 180px;   /* Adjust the profile image width to 180px */
-    height: 180px;  /* Adjust the profile image height to 180px */
-  }
-
-  .section__text {
-    text-align: center;  /* Ensure text remains centered */
-  }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* CSS for medium-sized screens */
 }
 
-/* Media query for screens smaller than 600px (mobile screens) */
-@media screen and (max-width: 600px) {
-  #profile {
-    flex-direction: column;  /* Stack profile image and text vertically */
-    padding: 2rem;            /* Adjust padding to make it fit on mobile */
-  }
-
-  .section__pic-container {
-    width: 140px;   /* Set the profile image width to 140px for mobile */
-    height: 140px;  /* Set the profile image height to 140px for mobile */
-  }
-
-  .section__text {
-    text-align: center;  /* Ensure text is centered */
-  }
-
-  .title {
-    font-size: 2rem;  /* Adjust font size for smaller screens */
-  }
-
-  .section__text__p1 {
-    font-size: 1.25rem;  /* Adjust font size for smaller screens */
-  }
-
-  .section__text__p2 {
-    font-size: 1rem;  /* Adjust font size for smaller screens */
-  }
+@media only screen and (min-width: 1025px) {
+  /* CSS for larger screens */
 }
-
 
 @media screen and (max-width: 1400px) {
     #profile {
@@ -101,8 +53,8 @@
       margin: 0 5%;
     }
     .section__pic-container {
-      width: 245px;
-      height: 245px;
+      width: 275px;
+      height: 275px;
       margin: 0 auto 2rem;
     }
     .about-containers {
@@ -169,21 +121,3 @@
       text-align: justify;
     }
   }
-  
-  /*for Medium size screens*/
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  .section__pic-container {
-    width: 140;
-    height: 140;
-    margin: 0 auto 2rem;
-  }
-}
-
-/*for moblie screen*/ 
-@media only screen and (max-width: 600px) {
-  .section__pic-container {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto 2rem;
-}
-}
