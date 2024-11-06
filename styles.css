@@ -165,9 +165,12 @@ section {
 
 #profile {
   display: flex;
+  flex-direction: column;  /* Stack elements vertically by default */
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  align-items: center;     /* Center the content horizontally */
+  gap: 2rem;               /* Add space between the profile image and text */
+  height: auto;
+  padding: 3rem;
 }
 
 .section__pic-container {
